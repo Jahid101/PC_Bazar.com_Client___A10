@@ -79,7 +79,7 @@ const AddProduct = () => {
                         <span style={{ color: 'green' }}> {dbStatus ? "Product added successfully." : ""}</span>
                     }
                 </form>
-                
+
             </div>
         </div>
     );
