@@ -27,7 +27,12 @@ const AddProduct = () => {
             body: JSON.stringify(productInfo)
         })
             .then(res => res.json())
-            .then(data => setDbStatus(data))
+            .then(data => {
+                setDbStatus(data);
+                if(data){
+                    alert('Product added successfully.')
+                }
+            })
 
         e.preventDefault();
     }
