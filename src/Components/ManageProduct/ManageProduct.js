@@ -12,6 +12,13 @@ const ManageProduct = () => {
     }, [])
 
 
+    const deleted = () => {
+        fetch('https://pacific-wildwood-47239.herokuapp.com/products')
+            .then(res => res.json())
+            .then(data => setProducts(data))
+    }
+
+
     const handleDelete = (id) => {
 
         fetch(`https://pacific-wildwood-47239.herokuapp.com/deleteProduct/${id}`, {
@@ -21,6 +28,7 @@ const ManageProduct = () => {
         .then(data=>{
             if(data){
                 alert('Product Deleted')
+                deleted();
             }
         })
     }
