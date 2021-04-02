@@ -18,6 +18,7 @@ import AddProduct from './Components/AddProduct/AddProduct';
 import ManageProduct from './Components/ManageProduct/ManageProduct';
 import OrderPreview from './Components/OrderPreview/OrderPreview';
 import Thank from './Components/Thank/Thank';
+import SelectProduct from './Components/SelectProduct/SelectProduct';
 
 
 export const UserContext = createContext();
@@ -47,9 +48,9 @@ function App() {
           <PrivateRoute path="/orders/:id">
             <Orders></Orders>
           </PrivateRoute>
-          <PrivateRoute path="/orders">
+          {/* <PrivateRoute path="/orders">
             <Orders></Orders>
-          </PrivateRoute>
+          </PrivateRoute> */}
           <PrivateRoute path="/admin">
             <Admin></Admin>
           </PrivateRoute>
@@ -64,6 +65,9 @@ function App() {
           </PrivateRoute>
           <PrivateRoute path="/thank">
             <Thank></Thank>
+          </PrivateRoute>
+          <PrivateRoute path="/orders">
+            <SelectProduct></SelectProduct>
           </PrivateRoute>
           <Route path="*">
             <Error></Error>
