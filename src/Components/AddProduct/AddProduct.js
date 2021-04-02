@@ -30,6 +30,7 @@ const AddProduct = () => {
             .then(data => {
                 setDbStatus(data);
                 if(data){
+                    e.target.reset();
                     alert('Product added successfully.')
                 }
             })
