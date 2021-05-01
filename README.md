@@ -8,7 +8,7 @@
 
 ==> You have to have a account in order to buy any component.
 
-==> There is seperate login for Admin and normal Users also.
+==> There is separate login for Admin and normal Users also.
 
 
 ![image](https://user-images.githubusercontent.com/76203694/116690766-b08e9b80-a9db-11eb-8cad-fafd60be1ce8.png)
